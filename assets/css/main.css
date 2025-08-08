@@ -1650,36 +1650,32 @@ input, select, textarea {
   overflow: hidden;
   position: relative;
   width: 100%;
-  /* height inherited from other CSS */
 }
 
 .image.featured .slideshow {
   display: flex;
-  width: 600%;              /* 6 images side by side */
-  animation: slideImages 30s infinite; /* longer duration for smoothness */
+  width: 600%; /* 6 images */
+  animation: slideImages 30s infinite linear;
+  will-change: transform;
 }
 
 .image.featured .slideshow img {
   flex-shrink: 0;
-  width: 16.6667%;          /* each image takes one sixth */
+  width: 16.6667%;
+  height: auto;
   object-fit: cover;
 }
 
 @keyframes slideImages {
-  0%      { transform: translateX(0%); }
-  13.33%  { transform: translateX(0%); }
-  16.66%  { transform: translateX(-16.66%); }
-  29.99%  { transform: translateX(-16.66%); }
-  33.33%  { transform: translateX(-33.33%); }
-  46.66%  { transform: translateX(-33.33%); }
-  50%     { transform: translateX(-50%); }
-  63.33%  { transform: translateX(-50%); }
-  66.66%  { transform: translateX(-66.66%); }
-  79.99%  { transform: translateX(-66.66%); }
-  83.33%  { transform: translateX(-83.33%); }
-  96.66%  { transform: translateX(-83.33%); }
-  100%    { transform: translateX(0%); }
+  0%, 13.33%   { transform: translate3d(0, 0, 0); }
+  16.66%, 29.99% { transform: translate3d(-16.6667%, 0, 0); }
+  33.33%, 46.66% { transform: translate3d(-33.3334%, 0, 0); }
+  50%, 63.33%   { transform: translate3d(-50%, 0, 0); }
+  66.66%, 79.99% { transform: translate3d(-66.6667%, 0, 0); }
+  83.33%, 96.66% { transform: translate3d(-83.3334%, 0, 0); }
+  100%          { transform: translate3d(0, 0, 0); }
 }
+
 
 
 
