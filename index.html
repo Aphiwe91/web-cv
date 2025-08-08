@@ -15,27 +15,45 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-				<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/project1.jpg" alt="" /></span>
+            <article id="top" class="wrapper style1">
+            <div class="container">
+            <div class="row">
+             <div class="col-4 col-5-large col-12-medium">
+             <span class="image fit" id="portrait">
+          <img src="images/project5.png" alt="AP Potrait">
+		</span>
+
+        <style>
+          #portrait { /* Comment fixed */
+            display: flex !important;
+            justify-content: center !important;
+          }
+          #portrait img {
+			  object-fit: cover;
+              object-position: top center;
+            width: auto !important;
+            max-width: 100% !important;
+            height: auto !important;
+			max-height: 100% !important;
+            border-radius: 0 !important;
+          }
+        </style>
+
 						</div>
-						<br>
-						<br>
+						
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
-								<h1>Hi. I'm <strong>Aphiwe Sindapi</strong>.</h1>
+								<h1><strong>Aphiwe Sindapi</strong></h1>
 							</header>
-							<p>And this is my <strong>Digital Portfolio</strong> </p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
+							<p>This is my cloud-based<strong> digital portfolio</strong>, showcasing my creativity and learning path. It reflects my growth, skills, and dedication.</p>
+							<a href="#portfolio" class="button large scrolly">Learn about what I do.</a>
 						</div>
 					</div>
 				</div>
 			</article>
 
 
-			<article id="work" class="wrapper style2">
+						 <article id="work" class="wrapper style2">
 				<div class="container">
 					<header>
 						<h2>Here's all the stuff I do.</h2>
@@ -45,93 +63,126 @@
 							<section class="box style1">
 								<span class="icon featured fa-comments"></span>
 								<h3>Debug & fix</h3>
-								<p>I identify and fix bugs in HTML and CSS. Whether it's layout issues or broken functionality, I troubleshoot and solve problems</p>
+								<p>Identify and fix bugs in HTML and CSS. Whether it's layout issues or broken functionality, I troubleshoot and solve problems</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon solid featured fa-camera-retro"></span>
 								<h3>Design & Visuals</h3>
-								<p>I design custom visuals with tools like Canva. From logo to landing page layouts, I bring idea to life with simple, sharp design.</p>
+								<p>Design custom visuals with tools like Canva, logo's to landing page layouts. I bring idea to life with simple and sharp design.</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon featured fa-thumbs-up"></span>
 								<h3>Learn & Build</h3>
-								<p>I'm constantly learning by building real projects. I reverse-engineer ideas, experiment with code, and use what I need to create.</p>
+								<p>Constantly learning by building real projects, reverse-engineering ideas and experimenting with technology for safer internet.</p>
 							</section>
 						</div>
 					</div>
 					<footer>
-						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+						<a href="https://cloud.google.com" target="_blank" class="button large scrolly">Hosting & Cloud Services</a>
 					</footer>
 				</div>
 			</article>
 			<article id="portfolio" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h2>Here's some stuff I made recently.</h2>
+						<h2>Recent Projects and Development...</h2>
 						</header>
-						<div class="row">
+
+	      				<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/project.png" alt="Flyer" /></a>
-								<h3><a href="#"></a>Web Solutions </h3>
-								<p>I build websites from scratch based on client specifications and offer bug-fixing services..</p>
-							</article>
+							<a href="https://docs.google.com/document/d/e/2PACX-1vSH-24JilC0nGMmAHUCqzf7Ye0KOalzKQWGYbOJJIDQiRqK9hRV8P5HePTiLAV_I21C25b1X9jWy0y9/pub" target="_blank" onclick="return checkPassword()" class="image featured"><img src="images/mcgebalogo.png" alt="Business Profile"></a>
+                            <p>An emerging enterprise currently in the foundational phases of development, with a vision to deliver high-quality solutions and services. As my portfolio expands, the company will position itself to meet future requirements for sourcing and providing services to government and public sector projects. Built on the principles of innovation, integrity, and community impact, I am committed to sustainable growth and excellence</p>
+								
+							<!---- Password-protected link example --->
+                         <script>
+                          function checkPassword() {
+                          const password = prompt('Enter the password to access this link:');
+                           if (password === 'securitysolutions') {
+                          window.location.href = 'https://docs.google.com/document/d/e/2PACX-1vSH-24JilC0nGMmAHUCqzf7Ye0KOalzKQWGYbOJJIDQiRqK9hRV8P5HePTiLAV_I21C25b1X9jWy0y9/pub';
+                           } else {
+                          alert('Incorrect password!');
+                           }
+                          return false; // Prevent default link behavior
+                          }
+                         </script>
+						 
+                    
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/project3.png" alt="Thumbnail" /></a>
+								<a href="#" class="image featured"> <img src="images/canvad.png" alt="Thumbnail"></a>
+								
 								<h3>Content Creation</h3>
-								<p>I design custom thumbnails for creators to boost visual impact, engagement, and click-through rates. Each design is crafted from scratch to match your brand, and audience.</p>
+								<p>Design custom thumbnails for creators to boost visual impact, engagement, and click-through rates. Each design is crafted from scratch using Canva, tailored to your brand and audience for maximum appeal.</p>
 						</div>
+
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/project2.jpg" alt="Flyer"></a>
-								<h3>Branding</h3>
-                                <p>I bring ideas to life through bold visuals and branding that not only tell a story but make it unforgettable. Click to learn more about how the
-                                <a href="https://docs.google.com/document/d/1dWahyizI0Dl7_kUGEnK_URNtSvEGBpvLXVGUfaLfhmw/edit?usp=sharing">
-                                 <strong>KGD Project</strong></a></p>
+								<a href="#" class="image featured">
+                               <div class="slideshow">
+                               <img src="images/project2.jpg" alt="Flyer">
+                               <img src="images/project.png"  alt="Poster">
+							   <img src="images/project4.png" alt="T-Shirt">
+							   <img src="images/project1.jpg" alt="Logo">
+                               <img src="images/project.png"  alt="Poster">
+							   <img src="images/project4.png" alt="T-Shirt">
+							</div>
+                                </a>
+								<h3>Creative Branding</h3>
+                                <p>Transform ideas into bold visuals and storytelling-driven branding that leaves a lasting impression. Click on<a href="https://docs.google.com/document/d/1dWahyizI0Dl7_kUGEnK_URNtSvEGBpvLXVGUfaLfhmw/edit?usp=sharing" target="_blank" style="font-family: 'CustomFont', sans-serif; color: #333; text-decoration: none; padding: 5px; display: inline-block;" onmouseover="this.style.color='blue'; this.style.fontFamily='Arial, sans-serif';" onmouseout="this.style.color='#333'; this.style.fontFamily='CustomFont, sans-serif';">KGD</a>and learn more about this project.</p>
 								</article>
 						      </div>
 
 							<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/project4.png" alt="Flyer" /></a>
-								<h3><a href="#"></a>Web Solutions </h3>
-								<p>I build websites from scratch based on client specifications and offer bug-fixing services..</p>
-							</article>
+								<a href="#" class="image featured"><img src="images/web.jpg" alt="Flyer"></a>
+								<h3><a href="#"></a>Web Solutions</h3>
+								<p>Custom websites tailored to each client's specifications. I also provide bug-fixing, reliable hosting services, and website management. I don't rely on website builders, ensuring clean, efficient, and scalable code. Every project is crafted to deliver lasting performance.</p>
+								</article>
 						</div>
 
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/Project6.png" alt="Business Profile" /></a>
-								<h3><a href="#">CV Enhancement and Career Support Services</a></h3>
-								<p> This includes ATS-optimized resumes, tailored cover letters, and LinkedIn profile improvements.</p>
+								<h3></a>Career Support Services</h3>
+								<p>This includes ATS-optimized resumes, customized cover letters, and LinkedIn profile enhancements to boost your professional visibility.</p>
 							</article>
 						</div>
 
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="" alt="" ></a>
-								<h3><a href="#"></a>Learning Highlights </h3>
-								<p>I've completed a few online certificates which Im sharing to reflect my learning journey rather than formal credentials. Click <a href= "https://www.dropbox.com/scl/fo/j4zntunrx0xmresfy1tqm/ACQrQIsfTNU-FMRFilxEWiQ?rlkey=uaqwl4t3c3soha8752fxkwgot&st=vis0qd0p&dl=0"><strong>Certificates</strong></a> to view them.</p>
-							</article>
+								<a href="https://www.dropbox.com/scl/fo/j4zntunrx0xmresfy1tqm/ACQrQIsfTNU-FMRFilxEWiQ?rlkey=uaqwl4t3c3soha8752fxkwgot&st=v92uji0l&dl=0" target="_blank" class="image featured">
+                               <div class="slideshow">
+                               <img src="images/CCNA.png" alt="Certificate">
+                               <img src="images/Networking.png" alt="Certificate">
+							   <img src="images/Cyber.png" alt="Certificate">
+							   <img src="images/HTML.png" alt="Certificate">
+                               <img src="images/Kali.png" alt="Certificate">
+							   <img src="images/.png" alt="Certificate">
+                         </div>
+                                </a>
+								<h3>Workshops & Courses</h3>
+								<p>I've completed several online certificates as part of my ongoing learning journey which are not accredited. They highlight my dedication to continuous growth. Explore additional accredited career paths currently in progress.<a href= "https://www.freecodecamp.org/aphiwe91" target="_blank" style="font-family: 'CustomFont', sans-serif; color: #333; text-decoration: none; padding: 5px; display: inline-block;" onmouseover="this.style.color='blue'; this.style.fontFamily='Arial, sans-serif';"
+                                  onmouseout="this.style.color='#333'; this.style.fontFamily='CustomFont, sans-serif';">
+								  Click here</a></p> 
+                   			<article>
 						</div>
 			 			<div class="container">
 						 <p><a href="tel:+27723051947" class="button large scrolly">Get in touch with me</a></p>
-
-				</div>
-			</article>
+                        </div>
+			          </article>
 
 			<article id="contact" class="wrapper style4">
 				<div class="container medium">
 					<header>
-						<h2>Have me make stuff for you ...</h2>
-						<p> email ...</p>
+						<h2>Have me make stuff for you...</h2>
+						<p>send email below</p>
 					</header>
 					<div class="row">
 						<div class="col-12">
@@ -173,8 +224,7 @@
 							</ul>
 							<hr />
 						</div>
-					
-			</article>
+					</article>
 
 		
 			<script src="assets/js/jquery.min.js"></script>

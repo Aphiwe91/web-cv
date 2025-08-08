@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("fontawesome-all.min.css");
 
-/*
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1632,16 +1628,60 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		.image.fit {
-			display: inline-block;
-			size: auto
-		}
+        .image.fit img {
+	       display: flex;
+           justify-content: center;
+            width: 100%;     /* Let it fill the container */
+           height: auto;    /* Keep proportions before forcing square */
+          aspect-ratio: 1/1;             /* Force square shape */
+           object-fit: cover;             /* Crop to fit */
+           border-radius: 0;   /* Remove circle */
+            max-width: none;   /* Remove theme size limit */
+}
+
 
 		.image.featured {
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
+
+.image.featured {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  /* height inherited from other CSS */
+}
+
+.image.featured .slideshow {
+  display: flex;
+  width: 600%;              /* 6 images side by side */
+  animation: slideImages 30s infinite; /* longer duration for smoothness */
+}
+
+.image.featured .slideshow img {
+  flex-shrink: 0;
+  width: 16.6667%;          /* each image takes one sixth */
+  object-fit: cover;
+}
+
+@keyframes slideImages {
+  0%      { transform: translateX(0%); }
+  13.33%  { transform: translateX(0%); }
+  16.66%  { transform: translateX(-16.66%); }
+  29.99%  { transform: translateX(-16.66%); }
+  33.33%  { transform: translateX(-33.33%); }
+  46.66%  { transform: translateX(-33.33%); }
+  50%     { transform: translateX(-50%); }
+  63.33%  { transform: translateX(-50%); }
+  66.66%  { transform: translateX(-66.66%); }
+  79.99%  { transform: translateX(-66.66%); }
+  83.33%  { transform: translateX(-83.33%); }
+  96.66%  { transform: translateX(-83.33%); }
+  100%    { transform: translateX(0%); }
+}
+
+
 
 		.image.left {
 			float: left;
